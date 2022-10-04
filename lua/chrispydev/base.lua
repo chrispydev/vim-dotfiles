@@ -42,10 +42,14 @@ vim.api.nvim_create_autocmd("InsertLeave", {
   command = "set nopaste"
 })
 
+-- turing of some settings
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
+
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
 
 -- color scheme
--- vim.cmd[[colorscheme palenight]]
-vim.cmd[[colorscheme night-owl]]
+vim.cmd[[colorscheme palenight]]
+-- vim.cmd[[colorscheme night-owl]]
 -- vim.cmd[[colorscheme nord]]
