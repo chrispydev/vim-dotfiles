@@ -1,43 +1,47 @@
-local keymap = vim.keymap
+local function map(mode, lhs, rhs, opts)
+  local options = {noremap = true}
+  if opts then options = vim.tbl_extend('force', options, opts) end
+  vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+end
 
-keymap.set('n', 'x', '"_x')
+map('n', 'x', '"_x')
 
 -- Increment/decrement
-keymap.set('n', '+', '<C-a>')
-keymap.set('n', '-', '<C-x>')
+map('n', '+', '<C-a>')
+map('n', '-', '<C-x>')
 
 -- Delete a word backwards
-keymap.set('n', 'dw', 'vb"_d')
+map('n', 'dw', 'vb"_d')
 
 -- Select all
-keymap.set('n', '<C-a>', 'gg<S-v>G')
+map('n', '<C-a>', 'gg<S-v>G')
 
 -- Save with root permission (not working for now)
 --vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
 
 -- New tab
-keymap.set('n', 'te', ':tabedit')
+map('n', 'te', ':tabedit')
 -- Split window
-keymap.set('n', 'ss', ':split<Return><C-w>w')
-keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
+map('n', 'ss', ':split<Return><C-w>w')
+map('n', 'sv', ':vsplit<Return><C-w>w')
 -- Move window
-keymap.set('n', '<Space>', '<C-w>w')
-keymap.set('', 'sh', '<C-w>h')
-keymap.set('', 'sk', '<C-w>k')
-keymap.set('', 'sj', '<C-w>j')
-keymap.set('', 'sl', '<C-w>l')
+map('n', '<Space>', '<C-w>w')
+map('', 'sh', '<C-w>h')
+map('', 'sk', '<C-w>k')
+map('', 'sj', '<C-w>j')
+map('', 'sl', '<C-w>l')
 
 -- Resize window
-keymap.set('n', '<C-w><left>', '<C-w><')
-keymap.set('n', '<C-w><right>', '<C-w>>')
-keymap.set('n', '<C-w><up>', '<C-w>+')
-keymap.set('n', '<C-w><down>', '<C-w>-')
+map('n', '<C-w><left>', '<C-w><')
+map('n', '<C-w><right>', '<C-w>>')
+map('n', '<C-w><up>', '<C-w>+')
+map('n', '<C-w><down>', '<C-w>-')
 
 
 -- Line Moving
-keymap.set('n', 'A-down', ':m .+1<CR>==')
-keymap.set('n', 'A-up', ':m .-2<CR>==')
-keymap.set('i', 'A-down', '<Esc>:m .+1<CR>==gi')
-keymap.set('i','A-up', '<Esc>:m .-2<CR>==gi')
-keymap.set('v', 'A-down',":m '>+1<CR>gv=gv")
-keymap.set('v', 'A-up',":m '<-2<CR>gv=gv")
+map('n', 'A-down', ':m .+1<CR>==')
+map('n', 'A-up', ':m .-2<CR>==')
+map('i', 'A-down', '<Esc>:m .+1<CR>==gi')
+map('i','A-up', '<Esc>:m .-2<CR>==gi')
+map('v', '<A-down>',":m '>+1<CR>gv=gv")
+map('v', '<A-up>',":m '<-2<CR>gv=gv")
