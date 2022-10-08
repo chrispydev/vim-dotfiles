@@ -6,11 +6,11 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-emmet',
   \ 'coc-styled-components',
-  \ 'coc-tailwindcss',
   \ 'coc-tsserver',
   \ 'coc-htmldjango'
   \ ]
 
+  "  \ 'coc-tailwindcss',
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
