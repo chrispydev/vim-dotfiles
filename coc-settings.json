@@ -13,7 +13,8 @@
     "c++",
     "objc",
     "objcpp",
-    "h"
+    "h",
+    "lua"
   ],
   "emmet.includeLanguages": {
     "vue-html": "html",
@@ -46,6 +47,7 @@
       "filetypes": ["sh"],
       "ignoredRootPaths": ["~"]
     }
+
   },
   "suggest.completionItemKindLabels": {
     "keyword": "\uf1de",

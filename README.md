@@ -6,7 +6,7 @@
    sudo pacman -S luajit neovim tmux
 ```
 
-- Install vim plug
+- Install vim plug(packer)
 
 ```bash
    git clone --depth 1 https://github.com/wbthomason/packer.nvim\
@@ -14,6 +14,8 @@
 ```
 
 - Install neovim-npm package and python package
+
+- Comment vim.cmd[[colorscheme palenight]] in line
 
 ```python
 pip3 install --user neovim

@@ -7,13 +7,13 @@ let g:coc_global_extensions = [
   \ 'coc-emmet',
   \ 'coc-styled-components',
   \ 'coc-tsserver',
-  \ 'coc-htmldjango'
+  \ 'coc-htmldjango',
+  \ '@yaegassy/coc-tailwindcss3',
   \ ]
 
-  "  \ 'coc-tailwindcss',
 " Some servers have issues with backup files, see #649.
 set nobackup
-set nowritebackup
+"  set nowritebackup
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
