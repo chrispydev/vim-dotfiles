@@ -47,7 +47,6 @@
       "filetypes": ["sh"],
       "ignoredRootPaths": ["~"]
     }
-
   },
   "suggest.completionItemKindLabels": {
     "keyword": "\uf1de",

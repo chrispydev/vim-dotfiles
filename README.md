@@ -15,7 +15,7 @@
 
 - Install neovim-npm package and python package
 
-- Comment vim.cmd[[colorscheme palenight]] in line
+- Comment vim.cmd[[colorscheme palenight]] in line 54
 
 ```python
 pip3 install --user neovim
