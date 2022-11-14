@@ -14,7 +14,8 @@
     "objc",
     "objcpp",
     "h",
-    "lua"
+    "lua",
+    "dart"
   ],
   "emmet.includeLanguages": {
     "vue-html": "html",
@@ -74,5 +75,6 @@
     "typeParameter": "\uf728",
     "default": "\uf29c"
   },
-  "snippets.userSnippetsDirectory": "~/.config/nvim/ultisnips"
+  "snippets.userSnippetsDirectory": "~/.config/nvim/ultisnips",
+  "Lua.telemetry.enable": true
 }

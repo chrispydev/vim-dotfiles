@@ -9,6 +9,8 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-htmldjango',
   \ '@yaegassy/coc-tailwindcss3',
+  \ 'coc-flutter-tools',
+  \ 'coc-sumneko-lua',
   \ ]
 
 " Some servers have issues with backup files, see #649.
@@ -93,7 +95,8 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
+"  nmap <leader>n <Plug>(coc-rename) " changed to the bottom one
+nmap <leader>n <Plug>(coc-rename)
 
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)

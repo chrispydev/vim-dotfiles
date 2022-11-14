@@ -8,20 +8,17 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
+  use {
+    'svrana/neosolarized.nvim',
+    requires = { 'tjdevries/colorbuddy.nvim' }
+  }
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'nvim-lua/plenary.nvim' -- Common utilities
   use 'onsails/lspkind-nvim' -- vscode-like pictograms
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
   use 'hrsh7th/nvim-cmp' -- Completion
-  -- use 'neovim/nvim-lspconfig' -- LSP
-  -- use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
-  use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
-  -- use 'williamboman/mason.nvim' -- only used this for tailwindcss
-  -- use 'williamboman/mason-lspconfig.nvim'
 
-  -- use 'glepnir/lspsaga.nvim' -- LSP UIs
-  -- use 'L3MON4D3/LuaSnip'
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
@@ -48,5 +45,4 @@ packer.startup(function(use)
   use 'drewtempelmeyer/palenight.vim' -- color scheme
   use 'haishanh/night-owl.vim' -- color scheme
   use 'folke/tokyonight.nvim' -- color scheme
-  use 'sumneko/lua-language-server' -- for lua support
 end)
