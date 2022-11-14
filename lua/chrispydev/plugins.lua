@@ -43,6 +43,6 @@ packer.startup(function(use)
   use 'preservim/nerdcommenter' --commenter
   use {'neoclide/coc.nvim', branch = 'release'} -- my main server for programing
   use 'drewtempelmeyer/palenight.vim' -- color scheme
-  use 'haishanh/night-owl.vim' -- color scheme
   use 'folke/tokyonight.nvim' -- color scheme
+  use 'haishanh/night-owl.vim' -- color scheme
 end)
