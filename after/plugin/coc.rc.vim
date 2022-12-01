@@ -11,6 +11,7 @@ let g:coc_global_extensions = [
   \ '@yaegassy/coc-tailwindcss3',
   \ 'coc-flutter-tools',
   \ 'coc-sumneko-lua',
+  \ 'coc-pyright'
   \ ]
 
 " Some servers have issues with backup files, see #649.

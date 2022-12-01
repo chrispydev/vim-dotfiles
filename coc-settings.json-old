@@ -1,26 +1,42 @@
 {
-  "coc.preferences.formatOnSave": true,
-  "coc.preferences.formatOnType": true,
-  "emmet.includeLanguages": {
+  "coc.preferences.formatonsavefiletypes": [
+    "json",
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "css",
+    "html",
+    "python",
+    "c",
+    "cc",
+    "cpp",
+    "c++",
+    "objc",
+    "objcpp",
+    "h",
+    "lua",
+    "dart"
+  ],
+  "emmet.includelanguages": {
     "vue-html": "html",
     "django-html": "html",
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
-  "prettier.jsxSingleQuote": true,
-  "prettier.singleQuote": true,
+  "prettier.jsxsinglequote": true,
+  "prettier.singlequote": true,
   "languageserver": {
     "ccls": {
       "command": "ccls",
       "filetypes": ["c", "cpp", "objc", "objcpp"],
-      "rootPatterns": [
+      "rootpatterns": [
         ".ccls",
         "compile_commands.json",
         ".vim/",
         ".git/",
         ".hg/"
       ],
-      "initializationOptions": {
+      "initializationoptions": {
         "cache": {
           "directory": "/tmp/ccls"
         }
@@ -30,10 +46,10 @@
       "command": "bash-language-server",
       "args": ["start"],
       "filetypes": ["sh"],
-      "ignoredRootPaths": ["~"]
+      "ignoredrootpaths": ["~"]
     }
   },
-  "suggest.completionItemKindLabels": {
+  "suggest.completionitemkindlabels": {
     "keyword": "\uf1de",
     "variable": "\ue79b",
     "value": "\uf89f",
@@ -46,7 +62,7 @@
     "interface": "\uf417",
     "text": "\ue612",
     "enum": "\uf435",
-    "enumMember": "\uf02b",
+    "enummember": "\uf02b",
     "module": "\uf40d",
     "color": "\ue22b",
     "property": "\ue624",
@@ -56,9 +72,9 @@
     "file": "\uf723",
     "folder": "\uf114",
     "snippet": "\ue60b",
-    "typeParameter": "\uf728",
+    "typeparameter": "\uf728",
     "default": "\uf29c"
   },
-  "snippets.userSnippetsDirectory": "~/.config/nvim/ultisnips",
-  "Lua.telemetry.enable": true
+  "snippets.usersnippetsdirectory": "~/.config/nvim/ultisnips",
+  "lua.telemetry.enable": true
 }
