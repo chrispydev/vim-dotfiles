@@ -41,8 +41,9 @@ packer.startup(function(use)
   use 'dinhhuy258/git.nvim' -- For git blame & browse
   use 'shaunsingh/nord.nvim' -- theme
   use 'preservim/nerdcommenter' --commenter
-  use {'neoclide/coc.nvim', branch = 'release'} -- my main server for programing
+  use { 'neoclide/coc.nvim', branch = 'release' } -- my main server for programing
   use 'drewtempelmeyer/palenight.vim' -- color scheme
   use 'folke/tokyonight.nvim' -- color scheme
   use 'haishanh/night-owl.vim' -- color scheme
+  use 'Rigellute/shades-of-purple.vim'
 end)

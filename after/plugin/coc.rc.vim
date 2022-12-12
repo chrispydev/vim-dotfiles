@@ -7,12 +7,12 @@ let g:coc_global_extensions = [
   \ 'coc-emmet',
   \ 'coc-styled-components',
   \ 'coc-tsserver',
-  \ 'coc-htmldjango',
   \ '@yaegassy/coc-tailwindcss3',
   \ 'coc-flutter-tools',
   \ 'coc-sumneko-lua',
   \ 'coc-pyright'
   \ ]
+" \ 'coc-htmldjango',
 
 " Some servers have issues with backup files, see #649.
 set nobackup
@@ -184,3 +184,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 "  coc css support for scss
 autocmd FileType scss setl iskeyword+=@-@
+

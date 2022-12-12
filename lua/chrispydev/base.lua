@@ -50,6 +50,7 @@ vim.g.loaded_perl_provider = 0
 vim.opt.formatoptions:append { 'r' }
 
 -- color scheme
+-- vim.cmd[[colorscheme shades_of_purple]]
 -- vim.cmd[[colorscheme palenight]]
 -- vim.cmd[[colorscheme night-owl]]
 -- vim.cmd[[colorscheme nord]]
